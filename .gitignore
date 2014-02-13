@@ -1,0 +1,6 @@
+maketab
+a.out
+*.o
+ytab.[ch]
+proctab.c
+*~

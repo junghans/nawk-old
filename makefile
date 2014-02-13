@@ -31,8 +31,8 @@ CC = gcc -fprofile-arcs -ftest-coverage # then gcov f1.c; cat f1.c.gcov
 CC = gcc -g -Wall -pedantic 
 CC = gcc -O4 -Wall -pedantic -fno-strict-aliasing
 
-YACC = bison -d -y
-YACC = yacc -d -S
+#YACC = bison -d -y
+YACC = yacc -d #-S
 #YFLAGS = -d -S
 		# -S uses sprintf in yacc parser instead of sprint
 
@@ -87,4 +87,4 @@ names:
 	@echo $(LISTING)
 
 clean:
-	rm -f a.out *.o *.obj maketab maketab.exe *.bb *.bbg *.da *.gcov *.gcno *.gcda ytab.c ytab.h # proctab.c
+	rm -f a.out *.o *.obj maketab maketab.exe *.bb *.bbg *.da *.gcov *.gcno *.gcda ytab.c ytab.h proctab.c
