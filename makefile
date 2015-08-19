@@ -50,7 +50,7 @@ SHIP = README FIXES $(SOURCE) ytab[ch].bak makefile  \
 a.out:	ytab.o $(OFILES)
 	$(CC) $(CFLAGS) ytab.o $(OFILES) $(ALLOC)  -lm
 
-$(OFILES):	awk.h ytab.h proto.h
+$(OFILES):	ytab.o awk.h ytab.h proto.h
 
 ytab.o:	awk.h proto.h awkgram.y
 	$(YACC) $(YFLAGS) awkgram.y
