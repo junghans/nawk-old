@@ -1,0 +1,10 @@
+language: c
+
+script: 
+  -  make -j2
+
+compiler:
+  - clang
+  - gcc
+
+sudo: false
